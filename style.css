@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1060px;
+    margin: auto;
+    padding: .75em 1em;
+}
+header{
+    background-color: white;
+    font-size: .9em;
+}
+#logo{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: .1em;
+    color: #353535;
+}
+#t{
+    background-color: #353535;
+    color: white;
+    border-radius: 50%;
+    padding: .1em .4em;
+    margin: .2em;
+}
+header #nav-bar{
+    float: right;
+}
+header #nav-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header #nav-bar ul a li{
+    display: inline-block;
+    text-transform: uppercase;
+    color: grey;
+    letter-spacing: .1em;
+    padding: 0 .25em;
+    font-size: .9em;
+    padding: 0 1em;
+}
+header #nav-bar ul a li{
+    transition: all .3s ease;
+}
+header #nav-bar ul li:hover{
+    font-weight: 400;
+}
+header #nav-bar ul a li.active{
+    font-weight: 400;
+    pointer-events: none;
+}
+#banner{
+    background-image: url(/img/africa1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    min-height: calc(100% - (2.5em * .9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#banner .container{
+    width: auto;
+}
+#banner h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2.6em;
+    font-weight: 300;
+    letter-spacing: .25em;
+}
+#banner p{
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: .1em;
+}
+.details .top{
+    color: #E5E5E5;
+}
+.details .top i{
+    margin: .2em;
+}
+.details > div{
+    display: inline-block;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.details .reaction span{
+    font-weight: 300;
+    margin: .5em;
+    transition: all .3s ease
+}
+.details .reaction span:first-of-type:hover{
+    color: #E07A5F;
+}
+.details .reaction span:nth-of-type(2):hover{
+    color: #81B29A;
+}
+.details .read_more span{
+    font-weight: 300;
+    margin: 1em;
+}
+.details .read_more:hover{
+    color: #B1A7A6;
+}
+#blog{
+    background-color: #e9ecef;
+}
+#blog .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+}
+#blog .header *{
+    text-transform: uppercase;
+}
+#blog select{
+    appearance: none;
+    -webkit-appearance: none;
+    padding: .5em 1em;
+    border-color: #ced4da;
+    border-width: .125em;
+    border-style: solid;
+    margin: 0;
+}
+#blog input, #blog button{
+    appearance: none;
+    -webkit-appearance: none;
+    padding: .5em 1em;
+    border-color: #ced4da;
+    border-width: .125em;
+    border-style: solid;
+    margin: 0;
+}
+#blog input{
+    background-color: transparent;
+}
+#blog button{
+    background-color: white;
+    color: #ced4da;
+    border-left: none;
+}
+#blog .article{
+    background-color: white;
+    width: calc(25% - .5em);
+    margin: .25em;
+    display: inline-block;
+    vertical-align: top;
+}
+#blog .article img{
+    width: 100%;
+}
+#blog .content{
+    padding: .5em .9em;
+}
+#blog .article .grey_title{
+    color: grey;
+    font-size: .7em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: .5em;
+}
+#blog .article h3{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: #353535;
+}
+#blog .article .text{
+    color: grey;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.details .bottom{
+    font-size: .8em;
+    margin-bottom: .5em;
+    color: #6B705C;
+}
+.details .bottom i{
+    padding: .1em;
+}
+
+footer{
+    background-color: white;
+    font-size: .9em;
+}
+
+
+@media screen and (max-width: 900px){
+    html {
+      font-size: 2.25vw;
+    }
+    #blog .article{
+        width: calc((100% / 3) - .5em);
+    }
+}
+@media screen and (max-width: 600px){
+    html {
+      font-size: 3.75vw;
+    }
+    #blog .article{
+        width: calc(50% - .5em);
+    }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+  }
